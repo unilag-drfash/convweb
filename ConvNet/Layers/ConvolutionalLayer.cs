@@ -24,7 +24,12 @@ namespace ConvNet.Layers
 
         public override void ForwardPropagation()
         {
-            throw new NotImplementedException();
+            convolution();
+        }
+
+        public void convolution()
+        {
+
         }
     }
 }
