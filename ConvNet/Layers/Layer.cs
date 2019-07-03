@@ -1,13 +1,46 @@
 ﻿using MathNet.Numerics.LinearAlgebra;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConvNet.Layers
 {
-    abstract class Layer
+    public enum LAYER_TYPE
+    {
+        CONVOLUTIONAL,
+        DECONVOLUTIONAL,
+        CONNECTED,
+        MAXPOOL,
+        SOFTMAX,
+        DETECTION,
+        DROPOUT,
+        CROP,
+        ROUTE,
+        COST,
+        NORMALIZATION,
+        AVGPOOL,
+        LOCAL,
+        SHORTCUT,
+        SCALE_CHANNELS,
+        ACTIVE,
+        RNN,
+        GRU,
+        LSTM,
+        CONV_LSTM,
+        CRNN,
+        BATCHNORM,
+        NETWORK,
+        XNOR,
+        REGION,
+        YOLO,
+        ISEG,
+        REORG,
+        REORG_OLD,
+        UPSAMPLE,
+        LOGXENT,
+        L2NORM,
+        EMPTY,
+        BLANK
+    }
+
+    public abstract class Layer
     {
         protected int inputSize;
         public abstract Vector<double> Inputs { set; }
@@ -30,23 +63,17 @@ namespace ConvNet.Layers
             outputSize = -1;
             stride = -1;
         }
-
         public virtual void Prediction() { ForwardPropagation(); }
+
         public abstract void ForwardPropagation();
+
         public abstract Vector<double> BackPropagation(Vector<double> nextDelta);
-
         public virtual void WeightUpdate(double eta, double mu, double lambda) { }
-
 
         public virtual void GenerateWeights(double lower = -0.1, double upper = 0.1) { }
         public virtual void GenerateWeights(Vector<double> weights) { }
 
-
-
-
         public virtual string ToString(string fmt) { return "None\n"; }
-
-
 
         public bool CheckSize(int previousLayerOutputSize) { return previousLayerOutputSize == inputSize; }
     }

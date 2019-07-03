@@ -13,22 +13,31 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvNet.Test", "ConvNet.Tes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Custom|Any CPU = Custom|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42F9EF42-03DE-4735-917A-1076AFCE8BF5}.Custom|Any CPU.ActiveCfg = Release|Any CPU
+		{42F9EF42-03DE-4735-917A-1076AFCE8BF5}.Custom|Any CPU.Build.0 = Release|Any CPU
 		{42F9EF42-03DE-4735-917A-1076AFCE8BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{42F9EF42-03DE-4735-917A-1076AFCE8BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42F9EF42-03DE-4735-917A-1076AFCE8BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42F9EF42-03DE-4735-917A-1076AFCE8BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84157658-5ADF-4F46-873F-51F9A3268FDD}.Custom|Any CPU.ActiveCfg = Release|Any CPU
+		{84157658-5ADF-4F46-873F-51F9A3268FDD}.Custom|Any CPU.Build.0 = Release|Any CPU
 		{84157658-5ADF-4F46-873F-51F9A3268FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{84157658-5ADF-4F46-873F-51F9A3268FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84157658-5ADF-4F46-873F-51F9A3268FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84157658-5ADF-4F46-873F-51F9A3268FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2E2A52-BFF5-48F3-AC94-DC6262568905}.Custom|Any CPU.ActiveCfg = Custom|Any CPU
+		{BA2E2A52-BFF5-48F3-AC94-DC6262568905}.Custom|Any CPU.Build.0 = Custom|Any CPU
 		{BA2E2A52-BFF5-48F3-AC94-DC6262568905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BA2E2A52-BFF5-48F3-AC94-DC6262568905}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA2E2A52-BFF5-48F3-AC94-DC6262568905}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA2E2A52-BFF5-48F3-AC94-DC6262568905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16EFE592-37F5-447A-AB4B-30FE0C3228C0}.Custom|Any CPU.ActiveCfg = Release|Any CPU
+		{16EFE592-37F5-447A-AB4B-30FE0C3228C0}.Custom|Any CPU.Build.0 = Release|Any CPU
 		{16EFE592-37F5-447A-AB4B-30FE0C3228C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16EFE592-37F5-447A-AB4B-30FE0C3228C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16EFE592-37F5-447A-AB4B-30FE0C3228C0}.Release|Any CPU.ActiveCfg = Release|Any CPU

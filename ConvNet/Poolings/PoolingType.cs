@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConvNet.Poolings
 {
-    interface PoolingType
+    interface IPooling
     {
         double f(Matrix<double> m);
 
@@ -15,7 +15,7 @@ namespace ConvNet.Poolings
         
         string Type();
     }
-    public class Max : PoolingType
+    public class Max : IPooling
     {
         public double f(Matrix<double> m) { return m.Enumerate().Max(); }
         public Matrix<double> df(Matrix<double> m)
@@ -36,7 +36,7 @@ namespace ConvNet.Poolings
         }
         public string Type() { return "Max"; }
     }
-    public class Average : PoolingType
+    public class Average : IPooling
     {
         public double f(Matrix<double> m) { return m.Enumerate().Average(); }
         public Matrix<double> df(Matrix<double> m)
